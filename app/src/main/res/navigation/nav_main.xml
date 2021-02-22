@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/newsListFragment">
+
+    <fragment
+        android:id="@+id/newsListFragment"
+        android:name="com.xammy.mvvmarchitecture.ui.newslisting.NewsListFragment"
+        android:label="NewsListFragment">
+
+        <action
+            android:id="@+id/actionNewsListToDetails"
+            app:destination="@+id/newsDetailsFragment"
+
+            >
+            <argument
+                android:name="news"
+                app:argType="com.xammy.mvvmarchitecture.data.news.News" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/newsDetailsFragment"
+        android:name="com.xammy.mvvmarchitecture.ui.newsdetails.NewsDetailsFragment"
+        android:label="NewsDetailsFragment">
+        <argument
+             android:name="news"
+            app:argType="com.xammy.mvvmarchitecture.data.news.News" />
+
+    </fragment>
+
+</navigation>
