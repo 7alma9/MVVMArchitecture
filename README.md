@@ -11,8 +11,8 @@ A simple project for [News](https://newsapi.org/) based on Kotlin MVVM clean arc
 
 
 # Screenshot
-![Screen shot](https://github.com/7alma9/MVVMArchitecture/blob/main/screenshots/device-2021-02-22-192023.png)
-![Screen shot](https://github.com/7alma9/MVVMArchitecture/blob/main/screenshots/device-2021-02-22-192051.png)
+![Screen shot0](https://github.com/7alma9/MVVMArchitecture/blob/main/screenshots/device-2021-02-22-192023.png)
+![Screen shot1](https://github.com/7alma9/MVVMArchitecture/blob/main/screenshots/device-2021-02-22-192051.png)
  
 
 ## How to build on your environment
