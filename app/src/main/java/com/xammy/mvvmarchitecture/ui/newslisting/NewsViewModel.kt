@@ -46,8 +46,7 @@ class NewsViewModel(
                 allNewsResultLiveData.value = it
             }
             when (outcome) {
-                is com.xammy.mvvmarchitecture.api.Result.Success -> {
-
+                is Result.Success -> {
                     outcome.let {
                         allNewsResultLiveData.value = it
                     }

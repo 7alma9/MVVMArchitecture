@@ -25,7 +25,7 @@ fun bindNewPagination(recyclerView: RecyclerView, newsViewModel: NewsViewModel) 
     Paginator(
         recyclerView,
         isLoading = {
-            return@Paginator newsViewModel.outcomeLiveData.value is com.xammy.mvvmarchitecture.api.Result.Loading
+            return@Paginator newsViewModel.outcomeLiveData.value is Result.Loading
         },
         loadMore = { newsViewModel.fetchAllNews(it) }
     ).run {
@@ -36,7 +36,7 @@ fun bindNewPagination(recyclerView: RecyclerView, newsViewModel: NewsViewModel) 
 @BindingAdapter("payload")
 fun bindRecyclerData(recyclerView: RecyclerView, response: Result<NewsResponse>?) {
     response?.let {
-        if (it is com.xammy.mvvmarchitecture.api.Result.Success) {
+        if (it is Result.Success) {
             it.data.let { newsResponse ->
                 val adapter = recyclerView.adapter as? NewsAdapter
                 adapter?.totalCount = newsResponse.totalResults

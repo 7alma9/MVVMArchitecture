@@ -23,9 +23,7 @@ created on 2/22/21
             override suspend fun fetchFromNetwork(params: Map<String, String>): NewsResponse {
                 return allNewsApi.getAllNews(params)
             }
-
-            override var showProgress: Boolean = true
-        }.start(query, job) as MutableLiveData<Result<NewsResponse>>
+         }.start(query, job) as MutableLiveData<Result<NewsResponse>>
     }
 
 
@@ -38,8 +36,7 @@ created on 2/22/21
                 return allNewsApi.getDomainSpecificAllNews(params)
             }
 
-            override var showProgress: Boolean = false
-        }.start(sortBy, job) as MutableLiveData<Result<NewsResponse>>
+         }.start(sortBy, job) as MutableLiveData<Result<NewsResponse>>
     }
 
 }

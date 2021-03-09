@@ -13,10 +13,8 @@ created on 2/22/21
  **/
 
 abstract class BaseRepository<Response, Params> internal constructor() {
-    abstract var showProgress: Boolean
 
     abstract suspend fun fetchFromNetwork(params: Params): Response
-    private val result: MediatorLiveData<Result<Response>> = MediatorLiveData()
 
 
     open fun start(
@@ -24,7 +22,7 @@ abstract class BaseRepository<Response, Params> internal constructor() {
         job: Job
 
     ): LiveData<Result<out Any?>> = liveData(Dispatchers.IO + job) {
-        emit(Result.Loading(showProgress))
+        emit(Result.Loading(true))
         try {
             emit(Result.Success(fetchFromNetwork(params)))
         } catch (e: HttpException) {
