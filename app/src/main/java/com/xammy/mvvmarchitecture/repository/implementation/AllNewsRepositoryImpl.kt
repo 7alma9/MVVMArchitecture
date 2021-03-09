@@ -12,7 +12,8 @@ import kotlinx.coroutines.Job
 created on 2/22/21
  **/
 
- class AllNewsRepositoryImpl(private val allNewsApi: AllNewsApi) :
+@Suppress("UNCHECKED_CAST")
+class AllNewsRepositoryImpl(private val allNewsApi: AllNewsApi) :
     AllNewsRepository {
 
     override fun getAllNews(

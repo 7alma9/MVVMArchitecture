@@ -10,12 +10,12 @@ created on 2/22/21
  **/
 
 class Paginator(
-    private val recyclerView: RecyclerView,
+    recyclerView: RecyclerView,
     private val isLoading: () -> Boolean,
     private val loadMore: (Int) -> Unit,
 ) : RecyclerView.OnScrollListener() {
     var currentPage: Int = 0
-    var loading = isLoading()
+    private var loading = isLoading()
 
     init {
         recyclerView.addOnScrollListener(this)

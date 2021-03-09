@@ -40,7 +40,7 @@ abstract class BaseAdapter<B:ViewDataBinding> : RecyclerView.Adapter<BaseViewHol
         val data = data()[position]
         try {
             viewHolder.bindData(data,position)
-            viewHolder.binding().executePendingBindings();
+            viewHolder.binding().executePendingBindings()
 
         } catch (e: Exception) {
             e.printStackTrace()

@@ -1,10 +1,6 @@
 package com.xammy.mvvmarchitecture.ui.newslisting
 
-import android.view.View
-import androidx.navigation.NavController
-import androidx.navigation.Navigation
 import com.xammy.mvvmarchitecture.R
-
 import com.xammy.mvvmarchitecture.base.BaseActivity
 import com.xammy.mvvmarchitecture.base.BaseViewModel
 import com.xammy.mvvmarchitecture.databinding.ActivityMainBinding

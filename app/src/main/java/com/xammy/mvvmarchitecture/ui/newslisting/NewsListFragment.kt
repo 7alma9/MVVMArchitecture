@@ -1,16 +1,9 @@
 package com.xammy.mvvmarchitecture.ui.newslisting
 
 import android.os.Bundle
-import android.view.View
-import android.widget.Toast
-import androidx.navigation.NavDirections
-import androidx.navigation.fragment.FragmentNavigatorExtras
-import androidx.navigation.fragment.findNavController
-
 import com.xammy.mvvmarchitecture.R
-import com.xammy.mvvmarchitecture.base.BaseViewModel
 import com.xammy.mvvmarchitecture.base.BaseFragment
-import com.xammy.mvvmarchitecture.data.ErrorDescription
+import com.xammy.mvvmarchitecture.base.BaseViewModel
 import com.xammy.mvvmarchitecture.databinding.FragmentNewListBinding
 import com.xammy.mvvmarchitecture.ui.newsdetails.NewsDetailsFragmentArgs
 import org.koin.androidx.viewmodel.ext.android.viewModel

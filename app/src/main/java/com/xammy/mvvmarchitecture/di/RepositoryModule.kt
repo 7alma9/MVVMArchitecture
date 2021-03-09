@@ -49,7 +49,7 @@ fun createAllNewsRepository(allNewsApi: AllNewsApi): AllNewsRepository {
 fun createMasterKey(context: Context): MasterKey {
     return MasterKey.Builder(context, MasterKey.DEFAULT_MASTER_KEY_ALIAS)
         .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
-        .build();
+        .build()
 }
 
 private fun creteEncryptedSharedPref(

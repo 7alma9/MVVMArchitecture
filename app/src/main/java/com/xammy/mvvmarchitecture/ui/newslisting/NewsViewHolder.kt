@@ -4,7 +4,6 @@ package com.xammy.mvvmarchitecture.ui.newslisting
 import com.xammy.mvvmarchitecture.base.BaseViewHolder
 import com.xammy.mvvmarchitecture.data.news.News
 import com.xammy.mvvmarchitecture.databinding.ItemNewsBinding
- import java.text.FieldPosition
 /**
 @author Salman Aziz
 created on 2/22/21

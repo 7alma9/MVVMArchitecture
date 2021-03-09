@@ -21,7 +21,7 @@ abstract class BaseFragment<B : ViewDataBinding> : Fragment(), BaseView {
 
     abstract fun getViewModel(): BaseViewModel?
 
-    abstract fun initFragment();
+    abstract fun initFragment()
     lateinit var binding: B
     private var activity: BaseActivity<*>? = null
 

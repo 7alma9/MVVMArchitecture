@@ -17,7 +17,7 @@ abstract class BaseViewHolder<V:ViewDataBinding>(private val view: V) :
        view.root.setOnClickListener(this)
        view.root.setOnLongClickListener(this)
    }
-    abstract fun bindData(data:Any,postion:Int)
+    abstract fun bindData(data:Any,position:Int)
     fun view()=view.root
     fun binding()=view
     fun context(): Context =view.root.context

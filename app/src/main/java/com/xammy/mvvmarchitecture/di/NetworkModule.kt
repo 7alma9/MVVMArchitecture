@@ -2,7 +2,6 @@ package com.xammy.mvvmarchitecture.di
 
 import com.xammy.mvvmarchitecture.BuildConfig
 import com.xammy.mvvmarchitecture.api.AllNewsApi
-import com.xammy.mvvmarchitecture.api.TopHeadLinesApi
 import com.xammy.mvvmarchitecture.constants.connectionTimeOut
 import com.xammy.mvvmarchitecture.constants.readTimeOut
 import com.xammy.mvvmarchitecture.util.NetworkInterceptor
@@ -22,8 +21,7 @@ val networkModule = module {
     single { createOkHttpClient() }
     single { createRetrofit(get(), BuildConfig.BASE_URL) }
     single { createAllNewsApi(get()) }
-    single { createTopHeadLinesApi(get()) }
-}
+ }
 
 fun createOkHttpClient(): OkHttpClient {
     val httpLoggingInterceptor = HttpLoggingInterceptor()
@@ -49,5 +47,4 @@ fun createRetrofit(okHttpClient: OkHttpClient, url: String): Retrofit {
         .build()
 }
 
-fun createAllNewsApi(retrofit: Retrofit) = retrofit.create(AllNewsApi::class.java)
-fun createTopHeadLinesApi(retrofit: Retrofit) = retrofit.create(TopHeadLinesApi::class.java)
+fun createAllNewsApi(retrofit: Retrofit): AllNewsApi = retrofit.create(AllNewsApi::class.java)

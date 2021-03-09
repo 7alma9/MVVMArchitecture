@@ -1,6 +1,5 @@
 package com.xammy.mvvmarchitecture.ui.newslisting
 
-import android.view.View
 import com.xammy.mvvmarchitecture.R
 import com.xammy.mvvmarchitecture.base.BaseAdapter
 import com.xammy.mvvmarchitecture.base.BaseViewHolder

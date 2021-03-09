@@ -63,7 +63,7 @@
             <androidx.appcompat.widget.AppCompatTextView
                  android:id="@+id/published_at"
                 android:layout_width="0dp"
-                android:textSize="9sp"
+                android:textSize="12sp"
                 android:text="@{data.publishedAt}"
                 tools:text="Published at 2021-02-17T05:25:00Z"
                 android:layout_height="wrap_content"
